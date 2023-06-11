@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Academy1Admin</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+ <servlet>
+  <servlet-name>LogIn</servlet-name>
+  <servlet-class>academy.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LogIn</servlet-name>
+  <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>  
+        <servlet-name>ClassList</servlet-name>  
+        <servlet-class>academy.SetClassList</servlet-class>  
+   </servlet>  
+  
+   <servlet-mapping>  
+        <servlet-name>ClassList</servlet-name>  
+        <url-pattern>/SetClassList</url-pattern>  
+   </servlet-mapping>
+    
+   <servlet>  
+        <servlet-name>SubjectList</servlet-name>  
+        <servlet-class>academy.SetSubjectList</servlet-class>  
+   </servlet>  
+  
+   <servlet-mapping>  
+        <servlet-name>SubjectList</servlet-name>  
+        <url-pattern>/setMasterList</url-pattern>  
+   </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>TeacherList</servlet-name>  
+        <servlet-class>academy.SetTeacherList</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>TeacherList</servlet-name>  
+        <url-pattern>/SetTeacherList</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>AssignTeach</servlet-name>  
+        <servlet-class>academy.UpdateClassTeach</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>AssignTeach</servlet-name>  
+        <url-pattern>/UpdateClassTeach</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>AssignClass</servlet-name>  
+        <servlet-class>academy.UpdateClassSub</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>AssignClass</servlet-name>  
+        <url-pattern>/UpdateClassSub</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>GetStudent</servlet-name>  
+        <servlet-class>academy.GetStudentMasterList</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>GetStudent</servlet-name>  
+        <url-pattern>/GetStudentMasterList</url-pattern>  
+  </servlet-mapping>
+    
+  <servlet>  
+        <servlet-name>ClassReport</servlet-name>  
+        <servlet-class>academy.ClassReport</servlet-class>  
+  </servlet>  
+  
+  <servlet-mapping>  
+        <servlet-name>ClassReport</servlet-name>  
+        <url-pattern>/ClassReport</url-pattern>  
+  </servlet-mapping> 
+</web-app>
